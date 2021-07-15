@@ -60,6 +60,7 @@ body{
 }
 .player-description{
     text-align: justify;
+    color: grey;
 }
 
 /* Third work */
@@ -80,6 +81,33 @@ footer{
     font-size: 30px;
     margin-right: 20px;
 }
+
+            /* -------best goal videos and best assist videos -----*/
+
+
+.goal-videos{
+    background-color: rgb(161, 161, 223);
+    display: flex;
+    padding: 20px 10px;
+
+
+    }
+.best-goals {
+    width: 100%;
+    margin-left: 200px;
+}
+.best-goals iframe{
+    width: 560px;
+    height: 315px;
+}
+.best-assist{
+    width: 100%;
+}
+.best-assist iframe{
+    width: 560px;
+    height: 315px;
+}
+
 
 /* Media query */
 
@@ -106,6 +134,23 @@ footer{
     .players {
         grid-template-columns: 1fr;
         grid-column-gap: 40px;
+    }
+    .goal-videos{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .best-goals{
+        margin-left: 0%;
+        margin-bottom: 20px;
+    }
+    .best-goals iframe{
+        width: 377px;
+        height: 220px;
+    }
+    .best-assist iframe{
+        width: 377px;
+        height: 220px;
     }
     .fab{
         font-size: 25px;
